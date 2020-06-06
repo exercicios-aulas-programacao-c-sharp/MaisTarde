@@ -9,7 +9,7 @@ namespace MaisTarde
             DateTime dataHoraAtual = DateTime.Now;
             TimeSpan seisHorasEMeia = new TimeSpan(6,30,00);
 
-            DateTime dataHoraApos = dataHoraAtual.AddHours(6).AddMinutes(30).Date;
+            DateTime dataHoraApos = dataHoraAtual.AddHours(6).AddMinutes(30);
             DateTime dataHoraAposComIntervalo = dataHoraAtual + seisHorasEMeia;
 
             Console.WriteLine($"Agora {dataHoraAtual.ToShortTimeString()}, mais tarde {dataHoraApos.ToShortTimeString()}.");          
